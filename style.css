@@ -18,7 +18,7 @@ header {
     color: black;
     padding: 1%;
     text-align: center;
-    font-family: "Cairo", sans-serif;
+    font-family: "Chakra Petch", sans-serif;
 }
 
 .formulaire {
@@ -130,14 +130,4 @@ header {
 
 .next {
     right: 0;
-}
-.description{
-    background-color: white;
-    width: 45vh; 
-    margin: 2rem auto;
-    padding: 1rem;
-    opacity: 0.9;
-    z-index: 2;
-    border: solid black 1.5px;
-}
 }

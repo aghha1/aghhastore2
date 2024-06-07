@@ -1,16 +1,17 @@
+
 let slideIndex = 1;
 
 showSlides(slideIndex);
 
 let slideInterval = setInterval(function() {
-    plusSlides(1); 
+    plusSlides(1); // Changement automatique vers la diapositive suivante toutes les 10 secondes
 }, 10000); 
 
 
 function plusSlides(n) {
-    clearInterval(slideInterval); 
+    clearInterval(slideInterval); // Arrêt de l'intervalle pour éviter des conflits lors du changement manuel
     slideInterval = setInterval(function() {
-        plusSlides(1); 
+        plusSlides(1); // Réinitialisation de l'intervalle pour le changement automatique
     }, 10000); 
 
     showSlides(slideIndex += n);
@@ -192,8 +193,5 @@ function submitForm(event) {
   document.getElementById("prix_total").value = prixTotal;
 
 
-  window.location.href = "thankyou.html"; 
-} 
-
-
-
+  window.location.href = "thankyou.html"; // Remplace "thankyou.html" par le chemin de ta page "Thank You"
+}
